@@ -1,1 +1,1 @@
-# FrontEndChallenge
+# FrontEndChallenge Shopify
