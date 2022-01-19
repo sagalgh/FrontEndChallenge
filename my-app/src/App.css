@@ -1,0 +1,9 @@
+/* to style input use */
+.counter-input .form-control {
+display:flex;
+
+}
+/* to style buttons use */
+/* .counter-input .input-group-addon {
+  margin-right: 150px;
+} */
