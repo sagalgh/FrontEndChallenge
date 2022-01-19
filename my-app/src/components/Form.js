@@ -13,7 +13,7 @@ const InputForm= () => {
   //   />
   //   <Button variant="outline-success">Search</Button>
   // </Form>
-  <h1>Please select filters:</h1>
+  <h1>Filters:</h1>
   )
 };
 

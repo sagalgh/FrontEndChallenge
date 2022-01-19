@@ -10,6 +10,7 @@ const DateRange = (props) => {
   };
   return (
   <div>
+    <h1>Please select Date Range</h1>
      <DateRangePicker
        ranges={props.fromDate - props.toDate}
        alwaysShowCalendars={true}

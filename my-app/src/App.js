@@ -3,7 +3,9 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import Navbar from './components/Navbar';
 import InputForm from './components/Form';
+import SelectDate from './components/SelectDate';
 import DateRange from './components/DateRange';
+import CheckBox from './components/CheckBox';
 
 function App() {
   const[image, setImage]= useState({});
@@ -26,7 +28,11 @@ function App() {
       toDate={toDate}
       setToDate={setToDate} 
       />
-      <SelectDate />
+      <SelectDate
+      startDate={startDate}
+      setStartDate={setStartDate} 
+      />
+      <CheckBox />
     </div>
   );
 }
