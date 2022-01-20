@@ -4,19 +4,19 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 
 const DateRange = (props) => {
   const handleEvent = (event, picker) => {
-    props.setFromDate(picker.startDate._d.toISOString());
-    props.setToDate(picker.endDate._d.toISOString());
-    console.log(props.fromDate, props.toDate, "range")
+    // console.log("check",picker.startDate._d.toISOString().slice(0, 10))
+    props.setFromDate(picker.startDate._d.toISOString().slice(0, 10));
+    props.setToDate(picker.endDate._d.toISOString().slice(0, 10));
   };
+  // console.log(props.fromDate, props.toDate, "from-to date")
   return (
   <div>
-    <h1>Please select Date Range</h1>
+    <p>Choose Dates here:</p>
     
      <DateRangePicker
        ranges={props.fromDate - props.toDate}
        alwaysShowCalendars={true}
-       onEvent={handleEvent}
-      >
+       onEvent={handleEvent}>
         <button>Click Me To Open Picker!</button>
       </DateRangePicker>
   </div>

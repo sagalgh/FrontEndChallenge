@@ -2,40 +2,49 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import Navbar from './components/Navbar';
-import InputForm from './components/Form';
-import SelectDate from './components/SelectDate';
 import DateRange from './components/DateRange';
-import CheckBox from './components/CheckBox';
-import NumOfImages from './components/NumOfImages';
+import ImageList from './components/ImageList'
+import Error from './components/Error';
+import axios from 'axios'
+
+
 function App() {
-  const[image, setImage]= useState({});
-  const[search, setSearch]= useState("");
-  const[filter,setFilter]= useState(false);
-  const[startDate,setStartDate]= useState("");
+  const[images, setImages]= useState([]);
+  const[error,setError]= useState(false)
   const[fromDate, setFromDate]= useState('');
   const[toDate, setToDate]= useState('');
-  const[count,setCount] = useState("");
-  // useEffect(()=>{
-  //   if(search){
-  //     const url= ``
-  //   }
-  // })
+  useEffect(()=>{
+    let url= `https://api.nasa.gov/planetary/apod?api_key=xYb15iHy7g4r1SXH3IGbWTsnxb63HXfwzEObtYsh`
+    if(fromDate){
+      let newUrl= url+`&start_date=${fromDate}&end_date=${toDate}`
+      axios
+      .get(newUrl)
+      .then((response)=>{
+        if(!Array.isArray(response.data)){
+          response.data=[response.data]
+          console.log(response.data, "RESPONSE HERE")
+          }
+        setImages(response.data)
+      })
+      .catch((error) => {
+        setError(true)
+      })
+      }
+      else {
+        console.log("HERE")
+      }
+  },[fromDate,toDate])
+  
   return (
     <div className="App">
       <Navbar />
-      <InputForm />
       <DateRange 
       fromDate={fromDate}
       setFromDate={setFromDate}
       toDate={toDate}
       setToDate={setToDate} 
       />
-      <SelectDate
-      startDate={startDate}
-      setStartDate={setStartDate} 
-      />
-      <CheckBox filter={filter} setFilter={setFilter}/>
-      <NumOfImages count={count} setCount={setCount}/>
+      <ImageList images={images}/>
     </div>
   );
 }

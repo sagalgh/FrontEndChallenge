@@ -3,6 +3,33 @@
 display:flex;
 
 }
+
+.image--footer {
+	padding: 8px 20px;
+	font-size: 0.8em;
+	border-top: 4px solid #545149;
+}
+.footer--actions {
+	transition: opacity 0.2s ease-in-out;
+	opacity: 0;
+	float: right;
+}
+
+.footer--actions {
+	opacity: 1;
+}
+
+.footer--actions i {
+	transition: all 0.15s ease-in-out;
+	color: #4056a1;
+	opacity: 1;
+	margin-left: 8px;
+}
+
+.footer--actions i:hover {
+	opacity: 1;
+	color: #d79922;
+}
 /* to style buttons use */
 /* .counter-input .input-group-addon {
   margin-right: 150px;

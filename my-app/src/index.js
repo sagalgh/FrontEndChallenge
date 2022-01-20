@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import "assets/css/bootstrap.min.css";
+// import "assets/css/now-ui-kit.css";
+// import "assets/demo/demo.css";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-datepicker/dist/react-datepicker.css";
 import 'bootstrap-daterangepicker/daterangepicker.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

@@ -7,8 +7,8 @@ const SelectDate = (props) => {
     <div>
       <h1>Please Select Specific Date</h1>
     <DatePicker
-    selected={props.startDate}
-     onChange={(date) => props.setStartDate(date)} 
+    selected={props.selectedDate}
+     onChange={(date) => props.setSelectedDate(date)} 
      />
      </div>
   )
