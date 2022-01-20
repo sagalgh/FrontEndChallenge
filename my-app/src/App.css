@@ -1,4 +1,7 @@
-/* to style input use */
+.logo{
+	font-family: Copperplate, Papyrus, fantasy
+}
+
 .counter-input .form-control {
 display:flex;
 
@@ -30,7 +33,7 @@ display:flex;
 	opacity: 1;
 	color: #d79922;
 }
-/* to style buttons use */
-/* .counter-input .input-group-addon {
-  margin-right: 150px;
-} */
+
+.date-range{
+	margin: 20px;
+}

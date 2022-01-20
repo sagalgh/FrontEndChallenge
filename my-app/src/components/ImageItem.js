@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Card} from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,7 +8,7 @@ const ImageItem = (props) => {
   return (
 
 <Card border="dark" style={{ width: '40rem', marginTop: "50px", marginLeft: '400px'}}>
-  <Card.Img variant="top" src={props.url} />
+  <Card.Img alt={props.title} variant="top" src={props.url} />
   <Card.Body>
     <Card.Title style={{display:"flex", justifyContent:"center"}}>{props.title}</Card.Title>
     <Card.Text>

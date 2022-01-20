@@ -2,7 +2,7 @@ import React from 'react';
 import ImageItem from './ImageItem';
 
 const ImageList = ({images}) => {
-const list= images.map((image, index) => {
+const list = images.map((image, index) => {
   return (
     <ImageItem 
     key={index}
@@ -13,7 +13,6 @@ const list= images.map((image, index) => {
     />
   )
 })
-
   return (
   <div>
     {list}                                                                                                                               />

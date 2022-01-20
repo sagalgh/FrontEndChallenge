@@ -5,8 +5,7 @@ const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">Spacestagram</Navbar.Brand>
-   
+    <h1 className='logo'>Spacestagram</h1>
   
   </Container>
 </Navbar>
