@@ -9,7 +9,7 @@ We are expanding Shopify's business to the universe and fetching photos from out
 ## Getting Started Locally
 
 First clone the repo:
-git clone https://github.com/BensThoughts/shopify-nasa-challenge
+git clone https://github.com/sagalgh/FrontEndChallenge
 
 
 This is a ReactJS project bootstrapped with create-react-app.
