@@ -3,7 +3,7 @@ We are expanding Shopify's business to the universe and fetching photos from out
 
 <img width="1355" alt="Screen Shot 2022-01-19 at 11 13 44 PM" src="https://user-images.githubusercontent.com/89239611/150272381-78650583-ae28-471f-b166-f6425dc346d0.png">
 
-<img width="401" alt="Screen Shot 2022-01-19 at 11 14 15 PM" src="https://user-images.githubusercontent.com/89239611/150272384-cb26970f-9cdd-426b-892a-f491cb8d9387.png">         <img width="357" alt="Screen Shot 2022-01-20 at 12 35 10 AM" src="https://user-images.githubusercontent.com/89239611/150279761-eb0a1c99-85eb-4b88-8eb9-597a87aafe7f.png">
+<img width="401" alt="Screen Shot 2022-01-19 at 11 14 15 PM" src="https://user-images.githubusercontent.com/89239611/150272384-cb26970f-9cdd-426b-892a-f491cb8d9387.png">                 <img width="357" alt="Screen Shot 2022-01-20 at 12 35 10 AM" src="https://user-images.githubusercontent.com/89239611/150279761-eb0a1c99-85eb-4b88-8eb9-597a87aafe7f.png">
 
 
 ## Getting Started Locally
