@@ -9,7 +9,8 @@ We are expanding Shopify's business to the universe and fetching photos from out
 
 
 ## Getting Started Locally
-###First clone the repo:
+
+First clone the repo:
 git clone https://github.com/BensThoughts/shopify-nasa-challenge
 
 
