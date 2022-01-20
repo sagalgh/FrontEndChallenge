@@ -12,7 +12,8 @@ function App() {
   const[fromDate, setFromDate]= useState('');
   const[toDate, setToDate]= useState('');
   useEffect(()=>{
-    let url= `https://api.nasa.gov/planetary/apod?api_key=xYb15iHy7g4r1SXH3IGbWTsnxb63HXfwzEObtYsh`
+  
+    let url= `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`
       let queryparam = `&start_date=${fromDate}&end_date=${toDate}`
       axios
       .get(fromDate? url + queryparam: url)
